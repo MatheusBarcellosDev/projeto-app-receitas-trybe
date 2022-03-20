@@ -16,7 +16,7 @@ export default function ExploreCard({ index, name, src, type }) {
     return color[random];
   };
 
-  /* const formatName = name.trim().split(' ')[0]; */
+  const formatName = name.trim().split(' ')[0];
 
   return (
 
@@ -46,7 +46,7 @@ export default function ExploreCard({ index, name, src, type }) {
           <p
             data-testid={ `${index}-card-name` }
           >
-            {name}
+            {formatName}
           </p>
         </div>
       </Link>

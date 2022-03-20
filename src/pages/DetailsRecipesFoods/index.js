@@ -59,6 +59,23 @@ function DetailsRecipesFoods() {
 
   return (
     <div className="container">
+      {useFoods[0] !== undefined
+      && <Details
+        src={ useFoods[0].strMealThumb }
+        title={ useFoods[0].strMeal }
+        category={ useFoods[0].strCategory }
+        nationality={ useFoods[0].strArea }
+        id={ useFoods[0].idMeal }
+        instructions={ useFoods[0].strInstructions }
+        measureAndIngredients={ useMeasureAndIngredients }
+        video={ useFoods[0].strYoutube }
+        copyUrl={ CopyLocationClipboard }
+        copyVisible={ useCopyVisible }
+        pathname={ pathname }
+        type="food"
+        recipesInProgressfromType={ inProgress }
+        recipesDone={ done }
+      />}
       <div className="container__recomendation">
         <div className="teste">
           {useFoods[0] !== undefined
@@ -77,23 +94,6 @@ function DetailsRecipesFoods() {
         ))}
         </div>
       </div>
-      {useFoods[0] !== undefined
-      && <Details
-        src={ useFoods[0].strMealThumb }
-        title={ useFoods[0].strMeal }
-        category={ useFoods[0].strCategory }
-        nationality={ useFoods[0].strArea }
-        id={ useFoods[0].idMeal }
-        instructions={ useFoods[0].strInstructions }
-        measureAndIngredients={ useMeasureAndIngredients }
-        video={ useFoods[0].strYoutube }
-        copyUrl={ CopyLocationClipboard }
-        copyVisible={ useCopyVisible }
-        pathname={ pathname }
-        type="food"
-        recipesInProgressfromType={ inProgress }
-        recipesDone={ done }
-      />}
     </div>
   );
 }

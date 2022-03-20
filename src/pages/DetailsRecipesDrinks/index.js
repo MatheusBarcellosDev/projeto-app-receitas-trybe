@@ -57,20 +57,6 @@ function DetailsRecipesDrinks() {
 
   return (
     <div className="container">
-      <div className="container__recomendation">
-        <div className="teste">
-          {useDrinks[0] !== undefined
-      && useRecommended.map((recomendation, index) => (
-        <div className="card__recomendation" key={ index }>
-          <Recomendation
-            src={ recomendation.strMealThumb }
-            title={ recomendation.strMeal }
-            id={ index }
-          />
-        </div>
-      ))}
-        </div>
-      </div>
       {useDrinks[0] !== undefined
       && <Details
         src={ useDrinks[0].strDrinkThumb }
@@ -89,6 +75,20 @@ function DetailsRecipesDrinks() {
         recipesInProgressfromType={ inProgress }
         recipesDone={ done }
       />}
+      <div className="container__recomendation">
+        <div className="teste">
+          {useDrinks[0] !== undefined
+      && useRecommended.map((recomendation, index) => (
+        <div className="card__recomendation" key={ index }>
+          <Recomendation
+            src={ recomendation.strMealThumb }
+            title={ recomendation.strMeal }
+            id={ index }
+          />
+        </div>
+      ))}
+        </div>
+      </div>
     </div>
   );
 }

@@ -57,7 +57,9 @@ function ExploreNationalities() {
     <>
       <div>
         <Header>
-          Explore Nationalities
+          <p style={ { fontSize: '36px' } }>
+            Explore Nationalities
+          </p>
         </Header>
         <div className="container__dropdown">
           <Select
