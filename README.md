@@ -26,6 +26,10 @@
 - ``React Router Dom``
 - ``Context API ``
 - ``Hooks``
+
+<h3 align="center">
+    <a href="https://admiring-ritchie-b6d922.netlify.app/">Acessar a demonstração</a>
+<h3 >
   
   
 
