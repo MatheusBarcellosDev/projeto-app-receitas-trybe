@@ -27,6 +27,23 @@
 - ``Context API ``
 - ``Hooks``
 
+## 🗂 Como baixar o projeto
+
+```bash
+
+    # Clonar o repositório
+    $ git clone git@github.com:MatheusBarcellosDev/projeto-app-receitas-trybe.git
+
+    # Entrar no diretório
+    $ cd projeto-app-receitas-trybe
+
+    # Instalar as dependências
+    $ npm install
+
+    # Iniciar o projeto
+    $ npm start
+```
+
 <h3 align="center">
     <a href="https://admiring-ritchie-b6d922.netlify.app/">Acessar a demonstração</a>
 <h3 >
